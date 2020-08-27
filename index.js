@@ -34,6 +34,9 @@ var instance = new Razorpay({
 var fs = require('fs')
 app.use(cors())
 app.use(bodyParser.json())
+app.get('/',(req,res,next)=>{
+    res.send("HELLO WORLD!")
+})
 app.get('/check',(req,res,next)=>{
   
   var options = {
